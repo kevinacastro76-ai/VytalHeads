@@ -1,0 +1,22 @@
+name: VytalHeads
+version: 1.0.0
+main: net.vytalheads.VytalHeads
+api-version: '1.21'
+author: VytalGameStudios
+description: Colección local de cabezas decorativas con GUI y comandos.
+commands:
+  heads:
+    description: Menú y administración de VytalHeads
+    usage: /heads [categoria|search|give|add|reload]
+    permission: vytalheads.use
+permissions:
+  vytalheads.use:
+    description: Permite abrir el menú de cabezas
+    default: true
+  vytalheads.admin:
+    description: Permite administrar la base de datos
+    default: op
+  vytalheads.give:
+    description: Permite entregar cabezas a otros jugadores
+    default: op
+    
