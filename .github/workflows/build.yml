@@ -1,0 +1,35 @@
+name: Build VytalHeads
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Instalar Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Compilar plugin
+        run: gradle clean build
+      - name: Subir JAR como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: VytalHeads-JAR
+          path: build/libs/VytalHeads-1.0.0.jar
+          if-no-files-found: error
+          retention-days: 14
+          
