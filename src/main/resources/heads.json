@@ -1,0 +1,39 @@
+{
+  "heads": [
+    {
+      "id": "demo_diamond",
+      "name": "Diamante de ejemplo",
+      "category": "BLOQUES",
+      "material": "DIAMOND_BLOCK",
+      "texture": ""
+    },
+    {
+      "id": "demo_creeper",
+      "name": "Creeper de ejemplo",
+      "category": "MOBS",
+      "material": "CREEPER_HEAD",
+      "texture": ""
+    },
+    {
+      "id": "demo_dragon",
+      "name": "Dragón de ejemplo",
+      "category": "MOBS",
+      "material": "DRAGON_HEAD",
+      "texture": ""
+    },
+    {
+      "id": "demo_piglin",
+      "name": "Piglin de ejemplo",
+      "category": "MOBS",
+      "material": "PIGLIN_HEAD",
+      "texture": ""
+    },
+    {
+      "id": "demo_skeleton",
+      "name": "Esqueleto de ejemplo",
+      "category": "MOBS",
+      "material": "SKELETON_SKULL",
+      "texture": ""
+    }
+  ]
+}
